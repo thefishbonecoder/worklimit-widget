@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WorkMeter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="header">
+        <div>
+          <div class="eyebrow">UNOFFICIAL</div>
+          <h1>WorkMeter</h1>
+        </div>
+        <div id="planBadge" class="plan-badge hidden"></div>
+      </header>
+
+      <section id="loginView" class="view hidden">
+        <p class="lead" data-i18n="loginLead">WorkMeter verwendet deine bestehende ChatGPT-Anmeldung im Browser. Es ist kein zusätzlicher Login nötig.</p>
+        <button id="startLoginButton" class="button primary" data-i18n="loginButton">Nutzungsdaten lesen</button>
+        <button id="openChatGPTButton" class="button secondary wide-button" data-i18n="openChatGPT">ChatGPT öffnen</button>
+        <p class="privacy-note" data-i18n="loginPrivacy">Keine Passwörter oder Sitzungstokens werden gespeichert. WorkMeter speichert nur die Nutzungswerte lokal im Browser.</p>
+      </section>
+
+      <section id="usageView" class="view hidden">
+        <div id="errorBanner" class="error hidden"></div>
+
+        <div class="meter-grid">
+          <article id="shortCard" class="meter-card hidden">
+            <div class="meter-topline">
+              <span id="shortLabel" class="meter-label">5h</span>
+              <strong id="shortPercent" class="meter-percent">—</strong>
+            </div>
+            <div class="bar" aria-hidden="true"><div id="shortBar" class="bar-fill"></div></div>
+            <div class="meter-meta">
+              <span id="shortCountdown">—</span>
+              <span id="shortClock">—</span>
+            </div>
+          </article>
+
+          <article id="weeklyCard" class="meter-card hidden">
+            <div class="meter-topline">
+              <span id="weeklyLabel" class="meter-label">Woche</span>
+              <strong id="weeklyPercent" class="meter-percent">—</strong>
+            </div>
+            <div class="bar" aria-hidden="true"><div id="weeklyBar" class="bar-fill"></div></div>
+            <div class="meter-meta">
+              <span id="weeklyCountdown">—</span>
+              <span id="weeklyClock">—</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="stats">
+          <div class="stat-row">
+            <span data-i18n="sessionUsage">Seit Browserstart</span>
+            <strong id="sessionUsage">—</strong>
+          </div>
+          <div id="resetRow" class="stat-row hidden">
+            <span data-i18n="fullResets">Vollständige Resets</span>
+            <strong id="resetCount">—</strong>
+          </div>
+          <div id="creditsRow" class="stat-row hidden">
+            <span data-i18n="credits">Credits</span>
+            <strong id="creditsBalance">—</strong>
+          </div>
+          <div class="stat-row subdued">
+            <span data-i18n="lastUpdate">Letzte Aktualisierung</span>
+            <span id="lastUpdated">—</span>
+          </div>
+        </div>
+
+        <label class="toggle-row">
+          <span data-i18n="warnings">Warnungen bei 25 %, 10 % und 0 %</span>
+          <input id="warningsToggle" type="checkbox" />
+        </label>
+
+        <div class="actions">
+          <button id="refreshButton" class="button primary" data-i18n="refresh">Aktualisieren</button>
+          <button id="openUsageButton" class="button secondary" data-i18n="openUsage">Nutzung öffnen</button>
+        </div>
+
+        <div class="footer-row">
+          <span id="refreshHint" class="subdued" data-i18n="autoRefresh">Automatisch alle 5 Min. bei offenem ChatGPT</span>
+          <button id="logoutButton" class="link-button" data-i18n="clearData">Lokale Daten löschen</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="core.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
