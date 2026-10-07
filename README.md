@@ -10,6 +10,18 @@ WorkMeter is a lightweight, privacy-focused browser extension for Chromium-based
 
 > **Unofficial project:** WorkMeter is not affiliated with, endorsed by, or sponsored by OpenAI.
 
+## Preview
+
+<p align="center">
+  <img src="workmeter-popup.png" alt="WorkMeter popup showing ChatGPT usage limits and reset information" width="360">
+</p>
+
+<p align="center">
+  <img src="workmeter-toolbar-badge.png" alt="WorkMeter toolbar badge showing the remaining short-window percentage" width="180">
+</p>
+
+The toolbar badge keeps the remaining short-window percentage visible while you work. Open the popup for detailed limits, reset times, session usage, warnings and available resets.
+
 ## Download
 
 **[Download WorkMeter v1.0.0](https://github.com/thefishbonecoder/worklimit-widget/releases/download/v1.0.0/WorkMeter-Chromium-v1.0.0-release.zip)**
