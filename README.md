@@ -4,33 +4,37 @@
 [![License](https://img.shields.io/github/license/thefishbonecoder/worklimit-widget)](LICENSE)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
 
-**WorkMeter keeps your ChatGPT Work and Codex usage limits visible directly in the browser, so you do not have to repeatedly open the usage settings page.**
+**WorkMeter is a free, open-source ChatGPT usage limit tracker and Chromium browser extension for Chrome, Microsoft Edge and other Chromium-based browsers. It keeps ChatGPT Work and Codex usage limits visible directly in your browser toolbar.**
 
-WorkMeter is a lightweight, privacy-focused browser extension for Chromium-based browsers. It runs without its own server and stores only normalized usage values, settings and warning state locally in the browser extension storage.
+Track your ChatGPT 5-hour and weekly usage limits, remaining percentage, reset times and session consumption without repeatedly opening the ChatGPT usage settings page. WorkMeter runs locally, has no advertising, no analytics and no external WorkMeter backend.
 
 > **Unofficial project:** WorkMeter is not affiliated with, endorsed by, or sponsored by OpenAI.
 
 ## Preview
 
 <p align="center">
-  <img src="workmeter-popup.png" alt="WorkMeter popup showing ChatGPT usage limits and reset information" width="360">
+  <img src="workmeter-popup.png" alt="WorkMeter ChatGPT usage limit tracker popup showing 5-hour and weekly limits, reset information and remaining usage" width="360">
 </p>
 
 <p align="center">
-  <img src="workmeter-toolbar-badge.png" alt="WorkMeter toolbar badge showing the remaining short-window percentage" width="180">
+  <img src="workmeter-toolbar-badge.png" alt="WorkMeter Chrome extension toolbar badge showing the remaining ChatGPT usage percentage" width="180">
 </p>
 
 The toolbar badge keeps the remaining short-window percentage visible while you work. Open the popup for detailed limits, reset times, session usage, warnings and available resets.
 
 ## Download
 
+### Free download for Chrome, Edge and Chromium browsers
+
 **[Download WorkMeter v1.0.0](https://github.com/thefishbonecoder/worklimit-widget/releases/download/v1.0.0/WorkMeter-Chromium-v1.0.0-release.zip)**
+
+Free and open source. No account, no advertising and no analytics.
 
 [View the latest release and release notes](https://github.com/thefishbonecoder/worklimit-widget/releases/latest)
 
 ## What WorkMeter shows
 
-- Live display of the 5-hour and weekly usage limits
+- Live display of the ChatGPT 5-hour and weekly usage limits
 - Remaining percentage directly on the browser toolbar badge
 - Reset countdown and local reset time
 - Usage consumed during the current browser session
@@ -40,7 +44,7 @@ The toolbar badge keeps the remaining short-window percentage visible while you 
 
 ## Why WorkMeter
 
-ChatGPT usage limits can matter during longer Work or Codex sessions. WorkMeter keeps the relevant information visible without requiring repeated navigation through ChatGPT settings.
+ChatGPT usage limits can matter during longer Work or Codex sessions. WorkMeter acts as a lightweight ChatGPT limit tracker, keeping the relevant information visible without requiring repeated navigation through ChatGPT settings.
 
 The extension is intentionally small: no WorkMeter account, no advertising, no analytics and no external WorkMeter backend.
 
@@ -126,6 +130,10 @@ Warning state is tracked locally to avoid repeated notifications for the same th
 - Toolbar badge prioritizes the 5-hour window, then the longer available usage window
 - Source code available in this repository
 - MIT License
+
+## Search terms and use cases
+
+WorkMeter is built for people looking for a ChatGPT usage tracker, ChatGPT limit tracker, ChatGPT usage limit extension, Chrome extension for ChatGPT limits, Edge extension for ChatGPT limits or a lightweight Codex usage tracker.
 
 ## Bugs and feature requests
 
